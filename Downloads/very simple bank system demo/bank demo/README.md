@@ -1,18 +1,30 @@
-## Getting Started
+# Bank System Demo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A simple Java banking system that manages accounts and customers.
 
-## Folder Structure
+## Features
 
-The workspace contains two folders by default, where:
+- Create and manage bank accounts
+- Handle customer information
+- Basic banking operations
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Project Structure
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- `src/` - Java source files
+  - `Account.java` - Account class
+  - `Bank.java` - Bank class
+  - `BankSystem.java` - Main system class
+  - `Customer.java` - Customer class
+- `bin/` - Compiled class files
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## How to Run
 
-## Dependency Management
+Compile the Java files:
+```bash
+javac src/*.java -d bin/
+```
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Run the main program:
+```bash
+java -cp bin/ BankSystem
+```
